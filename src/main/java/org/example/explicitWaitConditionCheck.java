@@ -21,7 +21,7 @@ public class explicitWaitConditionCheck {
         WebElement element = driver.findElement(By.name("q"));
         element.sendKeys("Testing");
         element.submit();
-        Duration duration = Duration.ofSeconds(5);
+        Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver,duration);
 
         WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("COVID")));
