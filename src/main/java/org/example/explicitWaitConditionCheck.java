@@ -19,12 +19,12 @@ public class explicitWaitConditionCheck {
         driver.manage().window().maximize();
         driver.navigate().to("https://www.google.com");
         WebElement element = driver.findElement(By.name("q"));
-        element.sendKeys("Testing");
+        element.sendKeys("software testing");
         element.submit();
         Duration duration = Duration.ofSeconds(5);
         WebDriverWait wait = new WebDriverWait(driver,duration);
 
-        WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("COVID")));
+        WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Software testing - Wikipedia")));
         element2.click();
 
         System.out.println("Clicked on first link");
