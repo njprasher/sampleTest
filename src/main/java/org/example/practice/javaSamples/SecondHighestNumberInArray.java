@@ -1,4 +1,4 @@
-package org.example;
+package org.example.practice.javaSamples;
 
 public class SecondHighestNumberInArray {
     public static void main(String[] args)

@@ -3,7 +3,7 @@
 <suite name="Test Automation Test Suite">
 	<test name="TestNG Test Cases">
 		<classes>
-			<class name="org.example.explicitWaitConditionCheck"></class>
+			<class name="org.example.practice.javaSamples.explicitWaitConditionCheck"></class>
 		</classes>
 	</test>
 </suite>
