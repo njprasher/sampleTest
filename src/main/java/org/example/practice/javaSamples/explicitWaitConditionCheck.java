@@ -5,16 +5,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class explicitWaitConditionCheck {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Neeraj Prasher\\OneDrive\\Documents\\projects\\sampleTest\\src\\main\\resources\\chromedriver\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-arguments");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.navigate().to("https://www.google.com");
@@ -24,7 +21,7 @@ public class explicitWaitConditionCheck {
         Duration duration = Duration.ofSeconds(5);
         WebDriverWait wait = new WebDriverWait(driver,duration);
 
-        WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Software testing - Wikipedia")));
+        WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Software QA testing")));
         element2.click();
 
         System.out.println("Clicked on first link");

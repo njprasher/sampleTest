@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.6.1</version>
+            <version>7.7.0</version>
             <scope>compile</scope>
         </dependency>
 
@@ -26,14 +26,14 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.6.0</version>
+            <version>4.23.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
         <dependency>
-            <groupId>com.relevantcodes</groupId>
+            <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>2.41.2</version>
+            <version>5.1.2</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -46,36 +46,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>5.2.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-to-slf4j</artifactId>
-            <version>2.19.0</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>2.0.5</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>2.0.5</version>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>2.0.5</version>
-            <scope>runtime</scope>
+            <version>5.3.0</version>
         </dependency>
 
     </dependencies>

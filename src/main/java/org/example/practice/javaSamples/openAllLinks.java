@@ -8,10 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class openAllLinks {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.drive", "C:\\Users\\Neeraj Prasher\\OneDrive\\Documents\\projects\\sampleTest\\src\\main\\resources\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.gmail.com/");
+        driver.get("https://www.globalsqa.com/demo-site/frames-and-windows/");
         java.util.List<WebElement> link = driver.findElements(By.tagName("a"));
         System.out.println(link.size());
 
@@ -23,5 +23,6 @@ public class openAllLinks {
             //print the links text
             System.out.println(link2.getText());
         }
+        driver.quit();
     }
 }
