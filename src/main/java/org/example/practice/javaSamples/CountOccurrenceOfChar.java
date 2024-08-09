@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class CountOccurrenceOfChar{
     public static void main(String[] args)
     {
-        String str = "ABCDABCDABC";
+        String str = "This is an Actual Test";
         //HashMap char as a key and occurrence as a value
         HashMap<Character, Integer> charCount = new HashMap<>();
         for (int i = str.length() - 1; i >= 0; i--)
