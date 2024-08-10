@@ -6,7 +6,7 @@ import java.util.Map;
 public class sample {
     public static void main(String[] args) {
 
-        String SentenceCheck="This is a Computer"; //Sentence to be checked
+        String SentenceCheck="This is a a This Computer"; //Sentence to be checked
         String[] words=SentenceCheck.split(" "); //get all words of sentence in an Array
         //reversing the words in a sentence
         System.out.println("Sentence : " +SentenceCheck);
